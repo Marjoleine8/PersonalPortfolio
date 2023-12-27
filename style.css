@@ -1,0 +1,247 @@
+
+
+p, li{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+      align-content: center;
+      display: block;
+      color: black;
+      background-color:white;
+      max-width:100%;
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  a{text-decoration: none;}
+  
+  h1{font-family: verdana;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 45px;}
+  
+  .btn-group .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 32px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    cursor: pointer;
+    width: 75%;
+    display: block;
+    margin:auto;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: hotpink;
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
+  .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  
+  .header li {
+    float: left;
+  }
+  
+  .header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover {
+    background-color:hotpink;
+  }
+  
+  .active {
+    background-color: white;
+  }
+  /* Apply the left alignment to the list elements */
+  li {
+    /* Float the list elements to the left */
+    float: left;
+    /* Clear any other floating elements */
+    clear: left;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: inherit;
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+   width: 100%;
+  }
+  .contact-left{
+    flex-basis: 50%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: hotpink;
+    margin-right: 50 px;
+    font-size: 25px;
+}
+#contact {
+    padding-left: 150px;
+}
+.social-icon a{
+    margin-top: 30px;
+}
+.social-icons a {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.submit-button {
+    padding: 14px 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    bottom: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: none;
+    font-weight: 300;
+    margin: 20px;
+    font-size: 15px;
+}
+.copyright i{
+    color: hotpink;
+}
+  
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 760px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Only one column */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding-right: 0;
+    }
+
+    .header-text {
+        margin: 10%;
+    }
+
+    .aboutme {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .row {
+        padding-right: 0;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .services-list div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #portfolio .work img {
+        max-width: 100%;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    #contact {
+        padding-left: 0;
+    }
+
+    .submit-button {
+        padding: 14px 20px;
+    }
+}

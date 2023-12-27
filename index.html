@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b24db15814.js" crossorigin="anonymous"></script>
+    <title>My Personal Profile</title>
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <ul>
+          <li><a class="active" href="#home">Marjoleine T. Egama</a></li>
+          <li><a class="active" href="https://github.com/Marjoleine8">Github Link</a></li>
+        </ul>
+      </div>
+      <div class="grid-item">
+      </div>
+      <div class="grid-item">
+        <img src="images/profile.jpg"alt="Profile Picture" width="500" height="800">
+      </div>
+      <div class="grid-item">
+        <h1>Hello</h1>
+        <hr>
+        <p>Hi! I'm Marjoleine T. Egama, and <b>Welcome</b> to my personal website! Get to know a little bit about me by navigating the buttons below.</p>
+        <div class="btn-group">
+          <a href="#About">
+            <button class="button">ABOUT</button>
+          </a>
+          <br>
+
+<a href="#skills">
+          <button class="button">SKILLS & HOBBIES</button> </a>
+          <br>
+          <a href="#coursework1">
+          <button class="button">Project 1</button></a>
+          <br>
+          <a href="#coursework2">
+          <button class="button">Project 2</button></a>
+        </div>
+      </div>
+      <div class="grid-item">
+        <a name="About">
+          <h1>About Me</h1>
+          <p>I am a 20 year old individual who enjoys exploring the world of Korean dramas and finds joy in the rhythms of music. Being an only child, I likely value close connections and may have a unique perspective on life. I am also family-oriented and I value my friends as much as how I value myself. I love dogs so much and I treat them as my bestfriend. </p>
+      </div>
+      <div class="grid-item">
+        <div class="image-1">
+        <img src="images/kdrama.jpg" alt="Library" width="500" height="200">
+      </div></div>
+      <div class="grid-item">
+        <div class="image-2">
+        <img src="images/music.jpg" alt="Library" width="500" height="200">
+      </div></div>
+
+
+      <div class="grid-item">
+        <a name="skills">
+          <h1> Skills & Hobbies </h1>
+          <p> Outside of my studies, I surf on the internet most of my free time. So it comes as no surprise,
+            I love playing mobile legends, as it enhances my problem-solving and teamwork. Furthermore, I love online shopping though I know it will make my wallet empty. </p>
+
+    <ul>
+    <li>Communication skills, written communication</li>
+    <li>Attention to detail</li>
+    <li>Can use video editing software</li>
+    <li>Adaptable in new environments</li>
+    <li>Problem-solving and teamwork</li>
+
+    </ul>
+
+</div>
+<div class="grid-item">
+  <img src="images/surf.webp"alt="Study" width="500" height="600">
+</div>
+  <div class="grid-item">
+
+    <a name="Project1">
+      <a href="https://marjoleine8.github.io/Activity1"><h1>Project 1</h1></a>
+      <p> For my first project, this is the first activity I made in this subject. You can click on the link above to check it out! </p>
+  </div>
+
+  <div class="grid-item">
+    <a name="Project2">
+      <a href="https://github.com/Marjoleine8/Activity_2.git"><h1>Project 2</h1></a>
+      <p> For my second project, please click the <a href="https://github.com/Marjoleine8/Activity_2.git">Link</a> to see my attempt!</p>
+</div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// used W3 schools to make the js for this button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i></i> marjoleineegama@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>Tm: 09751007917</p>
+                <p><i class="fa-solid fa-phone"></i>TNT: 09691266960</p>
+                <div class="social-icons">
+                    <a href="https://m.me/marjkyuttt"><i class="fa-brands fa-facebook-messenger"></i></i></a>
+                    <a href="https://m.me/marjkyuttt"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.instagram.com/_mrjlngm/?igsh=Z3h0cWIzY3dkNnB0&fbclid=IwAR1TraIEkqOgp-JusQShVI-98evwLdzfgtEmO1njEKEcQj3PoBV4iMkNpW4"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p> For more information please tap the icons above.</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" style="background-color: hotpink; padding: 20px; border: none; color: black; cursor: pointer;">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ MTE with <i class="fa-sharp fa-solid fa-heart"></i>.</p>
+    </div>
+</div>
+
+</body>
+</html>
